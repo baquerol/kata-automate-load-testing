@@ -13,13 +13,14 @@ jobs:
     runs-on: ubuntu-latest
 
     strategy:
+      fail-fast: false
       matrix:
-        simulation:
-          - mvn gatling:test -D"gatling.simulationClass=modeloAbierto.GetAllProductsAtOnceUsers"
-          - mvn gatling:test -D"gatling.simulationClass=modeloAbierto.GetAllProductsConstantUsersDuring"
-          - mvn gatling:test -D"gatling.simulationClass=modeloAbierto.GetAllProductsRampUsers.scala"
-          - mvn gatling:test -D"gatling.simulationClass=modeloAbierto.PostAddProductAtOnceUsers"
-          - mvn gatling:test -D"gatling.simulationClass=modeloAbierto.PostAddProductCombinado"
+        include:
+          - commands: 'mvn gatling:test -D"gatling.simulationClass=modeloAbierto.GetAllProductsAtOnceUsers'
+          - commands: 'mvn gatling:test -D"gatling.simulationClass=modeloAbierto.GetAllProductsConstantUsersDuring'
+          - commands: 'mvn gatling:test -D"gatling.simulationClass=modeloAbierto.GetAllProductsRampUsers.scala'
+          - commands: 'mvn gatling:test -D"gatling.simulationClass=modeloAbierto.PostAddProductAtOnceUsers'
+          - commands: 'mvn gatling:test -D"gatling.simulationClass=modeloAbierto.PostAddProductCombinado'
 
 
     steps:
@@ -30,6 +31,7 @@ jobs:
         uses: actions/setup-java@v3
         with:
           java-version: '17'
+          distribution: 'temurin'
 
       - name: Install dependencies
         run: mvn install
