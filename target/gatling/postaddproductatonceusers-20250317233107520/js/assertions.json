@@ -1,0 +1,10 @@
+{
+  "simulation": "modeloAbierto.PostAddProductAtOnceUsers",
+  "simulationId": "postaddproductatonceusers-20250317233107520",
+  "start": 1742254269292,
+  "description": "",
+  "scenarios": ["Test Agregar Productos"],
+  "assertions": [
+
+  ]
+}
