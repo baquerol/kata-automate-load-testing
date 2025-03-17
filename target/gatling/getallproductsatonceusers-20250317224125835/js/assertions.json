@@ -1,0 +1,10 @@
+{
+  "simulation": "modeloAbierto.GetAllProductsAtOnceUsers",
+  "simulationId": "getallproductsatonceusers-20250317224125835",
+  "start": 1742251287955,
+  "description": "",
+  "scenarios": ["Test consulta de todos los Productos"],
+  "assertions": [
+
+  ]
+}

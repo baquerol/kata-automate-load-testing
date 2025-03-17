@@ -1,0 +1,43 @@
+
+9
+	README.md,8/e/8ec9a00bfd09b3190ac6b22251dbb1aa95a0579d
+4
+mvnw,5/d/5d837c4ed85ecaaf932c506e80ff5d7b9f3d590d
+7
+pom.xml,4/4/442292b8a7efeabbe4cc176709b833b1792140ec
+4
+.env,3/c/3c84dcdc6bbe3d7817c49dcdc327b926fea1808a
+[
++src/test/scala/utilities/BuildRequest.scala,a/9/a97a0465c70375531dc4ae22d8736ce2d2477029
+_
+/src/test/scala/utilities/RequestSignerAWS.scala,e/f/efc5c8c4599ea36eab01b4c047e2732ed5799be4
+`
+0src/test/scala/utilities/EnvironmentValues.scala,9/4/94bf3b50f45cdbb6f45c86f709458a3206afc3c5
+d
+4src/test/scala/apiPublica/MasterDataManagement.scala,4/3/432c4466339648a96aca2590c49d1e8eeaaf79be
+e
+5src/test/scala/apiPublica/MasterDataManagement2.scala,c/8/c8d52c08aa5172cd9dbb2da792bad97ff30f389d
+b
+2src/test/scala/apiPrivada/CustomerManagement.scala,b/4/b4d4a18c9658c92d98930e7a3ff7c21d638f7bd3
+P
+ src/test/scala/conf/gatling.conf,7/c/7cbaa2b77d216da294269a9f09b447730897f682
+Q
+!src/test/scala/conf/recorder.conf,f/e/fe1a2126539d1fda34370d6b4e92c2a5042ef51d
+W
+'src/test/scala/apiDemo/CreateGame.scala,6/5/65facf9a1300a967217ac6fa25f1fe4ca980244f
+Z
+*src/test/scala/apiDemo/GetSingleGame.scala,c/0/c0fa30c0c584cf5fb4bd9d251fcf25d6175b2450
+a
+1src/test/scala/apiDemo/CreateGameWithFeeder.scala,6/8/682c2500eec142d42d863f1df45d2981e93740b1
+^
+.src/test/scala/apiDemo/GetGameWithFeeder.scala,b/6/b6a84be1aa66ce248da8892d7dde909e1e3d98d9
+X
+(src/test/scala/apiDemo/GetAllGames.scala,3/1/31ff1284c739de92c0a0d4e0e3d7b99a36e08e58
+8
+mvnw.cmd,1/f/1f1763f358c257ea3515417352b82b0165647ad1
+X
+(src/test/scala/apiDemo/EjemploJohn.scala,2/b/2b966832ee95f05d27e7e47d4abea972d32be3e1
+P
+ src/test/scala/EjemploJohn.scala,7/b/7b975e75d134994f0d97aef299b6784501c15db8
+N
+src/test/scala/GetGameId.scala,4/4/444471b0e0ebb4fa6f66bc6e3186f3bbff88a56c
