@@ -18,7 +18,7 @@ jobs:
         include:
           - commands: 'mvn gatling:test -Dgatling.simulationClass=modeloAbierto.GetAllProductsAtOnceUsers'
           - commands: 'mvn gatling:test -Dgatling.simulationClass=modeloAbierto.GetAllProductsConstantUsersDuring'
-          - commands: 'mvn gatling:test -Dgatling.simulationClass=modeloAbierto.GetAllProductsRampUsers.scala'
+          - commands: 'mvn gatling:test -Dgatling.simulationClass=modeloAbierto.GetAllProductsRampUsers'
           - commands: 'mvn gatling:test -Dgatling.simulationClass=modeloAbierto.PostAddProductAtOnceUsers'
           - commands: 'mvn gatling:test -Dgatling.simulationClass=modeloAbierto.PostAddProductCombinado'
 
