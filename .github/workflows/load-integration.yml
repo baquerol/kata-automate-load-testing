@@ -16,12 +16,14 @@ jobs:
       fail-fast: false
       matrix:
         include:
-          - commands: 'mvn gatling:test -Dgatling.simulationClass=modeloAbierto.GetAllProductsAtOnceUsers'
-          - commands: 'mvn gatling:test -Dgatling.simulationClass=modeloAbierto.GetAllProductsConstantUsersDuring'
-          - commands: 'mvn gatling:test -Dgatling.simulationClass=modeloAbierto.GetAllProductsRampUsers'
-          - commands: 'mvn gatling:test -Dgatling.simulationClass=modeloAbierto.PostAddProductAtOnceUsers'
-          - commands: 'mvn gatling:test -Dgatling.simulationClass=modeloAbierto.PostAddProductCombinado'
-
+          - commands: 'mvn gatling:test -Dgatling.simulationClass=modeloAbierto.GetAllProductsOpen'
+          - commands: 'mvn gatling:test -Dgatling.simulationClass=modeloAbierto.PostAddProductOpen'
+          - commands: 'mvn gatling:test -Dgatling.simulationClass=modeloAbierto.PutUpdateProductOpen'
+          - commands: 'mvn gatling:test -Dgatling.simulationClass=modeloAbierto.DeleteProductOpen'
+          - commands: 'mvn gatling:test -Dgatling.simulationClass=modeloCerrado.GetAllProductClosed'
+          - commands: 'mvn gatling:test -Dgatling.simulationClass=modeloCerrado.PostAddProductClosed'
+          - commands: 'mvn gatling:test -Dgatling.simulationClass=modeloCerrado.PutUpdateProductClosed'
+          - commands: 'mvn gatling:test -Dgatling.simulationClass=modeloCerrado.DeleteProductClosed'
 
     steps:
       - name: Check out code

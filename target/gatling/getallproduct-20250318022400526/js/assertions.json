@@ -1,0 +1,10 @@
+{
+  "simulation": "modeloCerrado.GetAllProduct",
+  "simulationId": "getallproduct-20250318022400526",
+  "start": 1742264642446,
+  "description": "",
+  "scenarios": ["Test consulta de todos los Productos"],
+  "assertions": [
+
+  ]
+}

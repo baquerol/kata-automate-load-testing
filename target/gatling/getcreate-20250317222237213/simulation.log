@@ -1,5 +1,0 @@
-RUN	test.GetCreate	getcreate	1742250157213	 	3.9.5
-USER	Test creación de un juego en base de datos	START	1742250159060
-REQUEST		Solicitar token de autenticación	1742250159054	1742250159608	OK	 
-REQUEST		Creación del juego	1742250159752	1742250159938	OK	 
-USER	Test creación de un juego en base de datos	END	1742250159956
