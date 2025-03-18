@@ -40,3 +40,13 @@ jobs:
 
       - name: Run Gatling Simulation
         run: ${{ matrix.commands }}
+
+      - name: Generate Gatling Report
+        run: ls -lh target/gatling
+
+      - name: Upload Gatling Report as Artifact
+        if: always ()
+        uses: actions/upload-artifact@v4
+        with:
+           name: gatling-reports
+           path: target/gatling/*
