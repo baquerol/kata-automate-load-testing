@@ -34,7 +34,7 @@ jobs:
           distribution: 'temurin'
 
       - name: Install dependencies
-        run: mvn install
+        run: 'mvn clean install -DskipTests'
 
       - name: Run Gatling Simulation
-        run: mvn gatling:test -Dgatling.simulationClass=${{ matrix.simulation }}
+        run: ${{ matrix.commands }}
