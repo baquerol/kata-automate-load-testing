@@ -16,7 +16,16 @@
         <maven-jar-plugin.version>3.4.2</maven-jar-plugin.version>
         <scala-maven-plugin.version>3.2.2</scala-maven-plugin.version>
     </properties>
-
+    <developers>
+        <developer>
+            <id>baquerol</id>
+            <name>Luis Eduardo Baquero Tautiva</name>
+            <email>luisbata14@hotmail.com</email>
+            <roles>
+                <role>Tester</role>
+            </roles>
+        </developer>
+    </developers>
     <dependencies>
         <dependency>
             <groupId>io.gatling.highcharts</groupId>
