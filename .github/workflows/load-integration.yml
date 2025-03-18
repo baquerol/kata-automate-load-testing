@@ -16,11 +16,11 @@ jobs:
       fail-fast: false
       matrix:
         include:
-          - commands: 'mvn gatling:test -D"gatling.simulationClass=modeloAbierto.GetAllProductsAtOnceUsers'
-          - commands: 'mvn gatling:test -D"gatling.simulationClass=modeloAbierto.GetAllProductsConstantUsersDuring'
-          - commands: 'mvn gatling:test -D"gatling.simulationClass=modeloAbierto.GetAllProductsRampUsers.scala'
-          - commands: 'mvn gatling:test -D"gatling.simulationClass=modeloAbierto.PostAddProductAtOnceUsers'
-          - commands: 'mvn gatling:test -D"gatling.simulationClass=modeloAbierto.PostAddProductCombinado'
+          - commands: 'mvn gatling:test -Dgatling.simulationClass=modeloAbierto.GetAllProductsAtOnceUsers'
+          - commands: 'mvn gatling:test -Dgatling.simulationClass=modeloAbierto.GetAllProductsConstantUsersDuring'
+          - commands: 'mvn gatling:test -Dgatling.simulationClass=modeloAbierto.GetAllProductsRampUsers.scala'
+          - commands: 'mvn gatling:test -Dgatling.simulationClass=modeloAbierto.PostAddProductAtOnceUsers'
+          - commands: 'mvn gatling:test -Dgatling.simulationClass=modeloAbierto.PostAddProductCombinado'
 
 
     steps:
