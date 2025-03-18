@@ -45,8 +45,7 @@ jobs:
         run: ls -lh target/gatling
 
       - name: Upload Gatling Report as Artifact
-        if: always ()
         uses: actions/upload-artifact@v4
         with:
-           name: binary-${{ matrix.os }}-${{ matrix.version }}
+           name: gatling-report-${{ github.run_id }}
            path: target/gatling/*
