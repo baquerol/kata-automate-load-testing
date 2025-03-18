@@ -16,14 +16,22 @@ jobs:
       fail-fast: false
       matrix:
         include:
-          - commands: 'mvn gatling:test -Dgatling.simulationClass=modeloAbierto.GetAllProductsOpen'
-          - commands: 'mvn gatling:test -Dgatling.simulationClass=modeloAbierto.PostAddProductOpen'
-          - commands: 'mvn gatling:test -Dgatling.simulationClass=modeloAbierto.PutUpdateProductOpen'
-          - commands: 'mvn gatling:test -Dgatling.simulationClass=modeloAbierto.DeleteProductOpen'
-          - commands: 'mvn gatling:test -Dgatling.simulationClass=modeloCerrado.GetAllProductClosed'
-          - commands: 'mvn gatling:test -Dgatling.simulationClass=modeloCerrado.PostAddProductClosed'
-          - commands: 'mvn gatling:test -Dgatling.simulationClass=modeloCerrado.PutUpdateProductClosed'
-          - commands: 'mvn gatling:test -Dgatling.simulationClass=modeloCerrado.DeleteProductClosed'
+          - index: 1
+            commands: 'mvn gatling:test -Dgatling.simulationClass=modeloAbierto.GetAllProductsOpen'
+          - index: 2
+            commands: 'mvn gatling:test -Dgatling.simulationClass=modeloAbierto.PostAddProductOpen'
+          - index: 3
+            commands: 'mvn gatling:test -Dgatling.simulationClass=modeloAbierto.PutUpdateProductOpen'
+          - index: 4
+            commands: 'mvn gatling:test -Dgatling.simulationClass=modeloAbierto.DeleteProductOpen'
+          - index: 5
+            commands: 'mvn gatling:test -Dgatling.simulationClass=modeloCerrado.GetAllProductClosed'
+          - index: 6
+            commands: 'mvn gatling:test -Dgatling.simulationClass=modeloCerrado.PostAddProductClosed'
+          - index: 7
+            commands: 'mvn gatling:test -Dgatling.simulationClass=modeloCerrado.PutUpdateProductClosed'
+          - index: 8
+            commands: 'mvn gatling:test -Dgatling.simulationClass=modeloCerrado.DeleteProductClosed'
 
     steps:
       - name: Check out code
@@ -45,7 +53,8 @@ jobs:
         run: ls -lh target/gatling
 
       - name: Upload Gatling Report as Artifact
+        if: always ()
         uses: actions/upload-artifact@v4
         with:
-           name: gatling-report-${{ github.run_id }}
+           name: gatling-report-${{ matrix.index }}-${{ github.run_id }}
            path: target/gatling/*
