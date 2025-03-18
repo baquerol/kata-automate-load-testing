@@ -48,5 +48,5 @@ jobs:
         if: always ()
         uses: actions/upload-artifact@v4
         with:
-           name: gatling-reports
+           name: gatling-reports-${{ github.run_id }}
            path: target/gatling/*
